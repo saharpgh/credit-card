@@ -1,0 +1,255 @@
+
+main {
+    height: 100vh;
+    background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.814), rgba(43, 42, 58, 0.825), rgba(157, 146, 215, 0.885));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .card {
+        position: absolute;
+        // border: 1px solid blue;
+        z-index: 99;
+        height: 35%;
+        top: 11.5%;
+        border-radius: 10px;
+        padding: 10px;
+        // background-image: linear-gradient(20deg, rgb(124, 108, 207), rgba(0, 0, 0, 0.915));  
+        background-image: linear-gradient(20deg, rgb(157, 146, 215), rgb(43, 42, 58), rgb(0, 0, 0),);
+        box-shadow: 0 0 10px black; 
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        >* {
+            // border: 1px solid white;
+            height: 100%;
+            >* {
+                // border: 1px solid red;
+                height: 33%;
+            }
+            >div:nth-of-type(3){
+                >* {
+                    // border: 1px solid green;
+                    flex-wrap: nowrap;
+                    width: 30%;
+                    >p {
+                        font-size: 13px;
+                        color: rgb(166, 140, 253);
+                        font-weight: bold;
+                    }
+                    >h2 {
+                        height: 50%;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: white;
+                    }
+                }
+                >div:nth-of-type(1) {
+                    width: 70%;
+                }
+            }
+            >div:nth-of-type(1){
+                >* {
+                    // border: 1px solid green;
+                    flex-wrap: nowrap;
+                    width: 30%;
+                    height: 100%;
+                    // background-color: brown;
+                    >img {
+                        // border: 1px solid green;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                >div:nth-of-type(1) {
+                    // background-color: yellow;
+                    width: 70%;
+                    >img {
+                        width: 30%;
+                    }
+                }
+            }
+            >div:nth-of-type(2) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                >h2 {
+                    font-size: 25px;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+    .box {
+        // box-shadow: 0 0 10px rgb(194, 171, 252);
+        box-shadow: 0 0 10px black;      
+        height: 60%;
+        margin-top: 10%;
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+        background-image: linear-gradient(20deg, rgb(0, 0, 0), rgb(43, 42, 58), rgb(157, 146, 215));
+        >* {
+            // border: 1px solid white;
+            height: 55%;
+            position: absolute;
+            bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >* {
+                // border: 1px solid red;
+                height: 25%;
+                margin: 2px 0;
+                border-radius: 5px;
+            }
+            .inputval {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >p {
+                    font-size: 13px;
+                    color: rgb(166, 140, 253);
+                    height: 30%;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    text-transform: capitalize;
+                    letter-spacing: 1px;
+                }
+                >div {
+                    height: 60%;
+                    >input {
+                        box-shadow: 0 0 5px rgb(194, 171, 252);
+                        border: none;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            >div:nth-of-type(3) {
+                flex-wrap: nowrap;
+                width: 95%;
+
+                >div:nth-of-type(1) {
+                    width: 70%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    >p {
+                        width: 50%;
+                        height: 20%;
+                        color: rgb(166, 140, 253);
+                        text-align: start;
+                        font-size: 15px;
+                        margin-left: -7%;
+                    }
+                    >input {
+                        height: 45%;
+                        width: 30%;
+                        border-radius: 5px;
+                        box-shadow: 0 0 5px rgb(194, 171, 252);
+                    }
+                }
+                >div:nth-of-type(2) {
+                    width: 40%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    display: flex;
+                    // border: 1px solid red;
+                    align-items: center;
+                    justify-content: center;
+                    >* {
+                        margin: 0;
+                        // border: 1px solid green;
+                        width: 100%;
+                        height: 50%;
+                    }
+                    >p {
+                        color: rgb(166, 140, 253);
+                        text-align: center;
+                        margin-top: 3%;
+                        font-size: 15px;
+                        width: 55%;
+                    }
+                    >input {
+                        width: 50%;
+                        border-radius: 5px;
+                        box-shadow: 0 0 5px rgb(194, 171, 252);
+                    }
+                }
+            }
+        }
+    }
+    .cardback {
+        height: 35%;
+        background-image: linear-gradient(20deg, rgb(157, 146, 215), rgb(43, 42, 58), rgb(0, 0, 0),);
+        position: absolute;
+        top: 11.6%;
+        border-radius: 10px;
+        z-index: 9;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 2s;
+        backface-visibility: hidden;
+        box-shadow: 0 0 10px black; 
+        transform: rotateY(180deg);
+        >* {
+            border: 1x solid red;
+            height: 20%;
+        }
+        >div:nth-of-type(3) {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            >img {
+                width: 30%;
+                height: 60%;
+                object-fit: contain;
+            }
+        }
+        >div:nth-of-type(1) {
+            width: 100%;
+            margin-top: 5%;
+            background-color: rgba(0, 0, 0, 0.727);
+        }
+        >div:nth-of-type(2) {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+            >p {
+                width: 20%;
+                color: rgb(166, 140, 253);
+                font-size: 15px;
+                text-align: center;
+                margin-top: 2%;
+            }
+            >h2 {
+                width: 80%;
+                height: 50%;
+                background-color: white;
+                border-radius: 10px;
+                font-size: 18px;
+                padding-left: 5%;
+                padding-top: 1.5%;
+            }
+        }
+    }
+    .card {
+        /* ... (your existing styles) */
+        transform-style: preserve-3d;
+        transition: transform 2s;
+        backface-visibility: hidden;
+      }
+      
+      .card.back {
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}

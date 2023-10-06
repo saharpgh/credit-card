@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <main class="container-fluid col-12 p-0">
+        <div class="card col-9 col-sm-6 col-md-4 col-xl-3 row m-0" id="credit-card">
+            <div>
+                <div class="row w-100 m-0">
+                    <div>
+                        <img src="img/chip.png" alt="">
+
+                    </div>
+                    <div>
+                        <img src="img/visa.png" alt="">
+
+                    </div>
+                </div>
+                <div class="row w-100 m-0">
+                    <h2 id="number">#### #### #### ####</h2>
+                </div>
+                <div class="row w-100 m-0">
+                    <div class="holder">
+                        <p>Card Holder</p>
+                        <h2 id="name"></h2>
+                    </div>
+                    <div class="expires">
+                        <p>Expires</p>
+                        <h2 id="date"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardback col-9 col-sm-6 col-md-4 col-xl-3 row m-0">
+            <div></div>
+            <div>
+                <p>CVV2</p>
+                <h2 id="CVV2"></h2>
+            </div>
+            <div>
+                <img src="img/visa.png" alt="">
+            </div>
+        </div>
+        <div class="box row col-10 col-sm-7 col-md-5 col-xl-4">
+            <div class="row w-100">
+                <div class="row w-100 inputval">
+                    <p class="w-100 m-0">card holder</p>
+                    <div class="w-100 m-0 p-0">
+                        <input id="inpName" type="text" class="w-100">
+                    </div>
+                </div>
+                <div class="row w-100 inputval">
+                    <p class="w-100 m-0">card number</p>
+                    <div class="w-100 m-0 p-0">
+                        <input id="inpNumber" type="text" class="w-100">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <p>Expiration Date</p>
+                        <input id="expiration" type="text" placeholder="MM/YY">
+                    </div>
+                    <div class="row">
+                        <p>CVV2</p>
+                        <input type="text" id="cvv2">
+                    </div>
+                </div>
+                <div class="row w-100">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</html>
